@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="ToDoList.css">
+</head>
+<body>
+        <div class="to-do">
+            <div class="status"> 
+                <h2 class="header">HIGH</h2>
+                <form class="add-high-task-form">
+                    <input type="text" placeholder="Добавить важных дел" name="highinput" class="input-high">
+                    <button type="submit" name="button" class="add-high-items-button">+</button>
+                </form>
+
+                <div class="high-items"></div>
+
+            </div>
+
+            <div class="status">
+                <h2 class="header">LOW</h2>
+                <form class="add-low-task-form">
+                    <input type="text" placeholder="Добавить" name="lowinput" class="input-low">
+                    <button type="submit" name="button" class="add-low-items-button">+</button>
+                </form>
+
+                <div class="low-items"></div>
+
+            </div>
+        </div>
+
+        <script type="module" src="UI.js"></script>
+        <script type="module" src="ToDoList.js"></script>
+</body>
+</html>
